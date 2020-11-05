@@ -1,0 +1,38 @@
+{
+  "board": {
+    "lists": [
+      {
+        "id": 1,
+        "header": "New landing page", 
+        "cards": [
+          { "id": 1, "content": "Do a mobile first layout", "alertNum": 0, "checkList": "", "avatarSrc":"", "author": "typicode" },
+          { "id": 2, "content": "Check the meta tags", "alertNum": 1, "checkList": "3/5", "avatarSrc":"https://i.imgur.com/OZaT7jl.png", "author": "typicode" },
+          { "id": 3, "content": "Check the responsive layout on all devices", "alertNum": 2, "checkList": "", "avatarSrc":"", "author": "typicode" }
+        ]
+      },
+      {
+        "id": 2,
+        "header": "Old landing", 
+        "cards": [
+          { "id": 1, "content": "Delete all references from the wiki", "alertNum": 0, "checkList": "", "avatarSrc":"", "author": "typicode" },
+          { "id": 2, "content": "Remove analytics code", "alertNum": 1, "checkList": "3/5", "avatarSrc":"https://i.imgur.com/OZaT7jl.png", "author": "typicode" },
+          { "id": 3, "content": "Whatever", "alertNum": 2, "checkList": "", "avatarSrc":"", "author": "typicode" },
+          { "id": 4, "content": "Think more tasks for this example", "alertNum": 2, "checkList": "", "avatarSrc":"", "author": "typicode" }
+        ]
+      },
+      {
+        "id": 2,
+        "header": "Do more cards", 
+        "cards": [
+          { "id": 1, "content": "Delete all references from the wiki", "alertNum": 0, "checkList": "", "avatarSrc":"", "author": "typicode" },
+          { "id": 2, "content": "Remove analytics code", "alertNum": 1, "checkList": "3/5", "avatarSrc":"https://i.imgur.com/OZaT7jl.png", "author": "typicode" },
+          { "id": 3, "content": "Whatever", "alertNum": 2, "checkList": "", "avatarSrc":"", "author": "typicode" },
+          { "id": 4, "content": "Delete all references from the wiki", "alertNum": 2, "checkList": "", "avatarSrc":"", "author": "typicode" },
+          { "id": 5, "content": "Remove analytics code", "alertNum": 1, "checkList": "3/5", "avatarSrc":"https://i.imgur.com/OZaT7jl.png", "author": "typicode" },
+          { "id": 6, "content": "Whatever", "alertNum": 2, "checkList": "", "avatarSrc":"", "author": "typicode" },
+          { "id": 7, "content": "Think more tasks for this example", "alertNum": 2, "checkList": "", "avatarSrc":"", "author": "typicode" }
+        ]
+      }
+    ]
+  }
+  }

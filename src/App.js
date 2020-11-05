@@ -1,23 +1,22 @@
 import logo from './logo.svg';
+import Header from './components/Header'
+import BoardCanvas from './components/BoardCanvas'
+import BoardHeader from './components/BoardHeader'
+import List from './components/List'
+import Avatar from './components/Avatar'
+import IconButton from './components/IconButton'
+import BellIcon from './components/Icons/Bell'
+import data from './database.json'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-blue w-full h-screen font-sans">
+      <Header avatar={<Avatar src="https://i.imgur.com/OZaT7jl.png" />}  addButton={<IconButton>+</IconButton>} infoButton={<IconButton>i</IconButton>} alertButton={<IconButton color="red"><BellIcon/></IconButton>} />
+      <BoardHeader title="Company Overview" companyName="Acme" />
+      <BoardCanvas>
+        {data.board.lists.map(({id, header, cards}) => <List key={id} header={header} cards={cards} />)}
+      </BoardCanvas>
     </div>
   );
 }
