@@ -1,19 +1,28 @@
-import React from 'react'
+import React, { useCallback } from 'react'
+import update from 'immutability-helper'
 import Item from './Item'
-import Avatar from './Avatar'
-import Alert from './Alert'
-import Badge from './Badge'
-import Radio from './Icons/Radio'
+import MenuIcon from './Icons/Menu'
 
-function List({header, cards, ...props}) {
+function List({index, header, items, handleState, ...props}) {
+    const moveItem = useCallback((dragIndex, hoverIndex) => {
+        const dragCard = items[dragIndex];
+        const upItems = update(items, {
+            $splice: [
+                [dragIndex, 1],
+                [hoverIndex, 0, dragCard],
+            ],
+        })
+        handleState(index, upItems)
+    }, [items]);
+
     return (
         <div class="rounded bg-grey-light  flex-no-shrink w-64 p-2 mr-3">
             <div class="flex justify-between py-1">
                 <h3 class="text-sm">{header}</h3>
-                <svg class="h-4 fill-current text-grey-dark cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 10a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4z"/></svg>
+                <MenuIcon color="dark" />
             </div>
             <div class="text-sm mt-2">
-                {cards.map(({id, content, alertNum, avatarSrc})=> <Item key={id} content={content} left={<span class="text-xs flex items-center"><Radio/> 3/5</span>} right={<Avatar src={avatarSrc} />}/>)}
+                {items.map(({id, content}, idx)=> <Item key={id} id={id} content={content} index={idx} moveItem={moveItem} />)}
                 <p class="mt-3 text-grey-dark">Add a card...</p>
             </div>
         </div>

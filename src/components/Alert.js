@@ -1,4 +1,3 @@
-
 function Alert({number, ...props}) {
     return(
         <div class="bg-red rounded p-1 inline-flex text-white text-xs">

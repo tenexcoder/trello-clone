@@ -1,4 +1,5 @@
 import Badge from './Badge'
+import MenuIcon from './Icons/Menu'
 
 function BoardHeader({title, companyName, status, ...props}) {
     return (
@@ -12,7 +13,7 @@ function BoardHeader({title, companyName, status, ...props}) {
                 </ul>
             </div>
             <div class="text-white font-sm text-underlined hidden md:flex items-center underline">
-                <svg class="h-4 fill-current text-white cursor-pointer mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 10a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4z"></path></svg>
+                <MenuIcon />
                 Show menu
             </div>
         </div>
