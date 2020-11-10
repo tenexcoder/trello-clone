@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tenexcoder/trello-clone/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/tenexcoder/trello-clone/static/js/main.4776a964.chunk.js",
+    "main.js.map": "/tenexcoder/trello-clone/static/js/main.4776a964.chunk.js.map",
+    "runtime-main.js": "/tenexcoder/trello-clone/static/js/runtime-main.acbfd3de.js",
+    "runtime-main.js.map": "/tenexcoder/trello-clone/static/js/runtime-main.acbfd3de.js.map",
+    "static/js/2.d8841a68.chunk.js": "/tenexcoder/trello-clone/static/js/2.d8841a68.chunk.js",
+    "static/js/2.d8841a68.chunk.js.map": "/tenexcoder/trello-clone/static/js/2.d8841a68.chunk.js.map",
+    "static/js/3.4a1a16d5.chunk.js": "/tenexcoder/trello-clone/static/js/3.4a1a16d5.chunk.js",
+    "static/js/3.4a1a16d5.chunk.js.map": "/tenexcoder/trello-clone/static/js/3.4a1a16d5.chunk.js.map",
+    "index.html": "/tenexcoder/trello-clone/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/tenexcoder/trello-clone/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.d8841a68.chunk.js.LICENSE.txt": "/tenexcoder/trello-clone/static/js/2.d8841a68.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.acbfd3de.js",
+    "static/js/2.d8841a68.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.4776a964.chunk.js"
+  ]
+}
