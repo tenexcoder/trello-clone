@@ -1,8 +1,10 @@
 # Trello Clone
 
+## [Live Demo](https://tenexcoder.github.io/trello-clone/)
+
 ## Background
 
-This project is part of a series on rapid prototyping on Twitch
+This project is part of a series on rapid prototyping on [Twitch] (https://www.twitch.tv/tenexcoder)
 
 ## Timeline
 
@@ -12,6 +14,6 @@ This project is part of a series on rapid prototyping on Twitch
 
 3. Nodejs Back-end
 
-## Acknowledgments 
+## Acknowledgments
 
 [killgt](https://tailwindcomponents.com/component/trello-panel-clone)
