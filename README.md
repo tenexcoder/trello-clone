@@ -4,7 +4,7 @@
 
 ## Background
 
-This project is part of a series on rapid prototyping on [Twitch] (https://www.twitch.tv/tenexcoder)
+This project is part of a series on rapid prototyping on [Twitch](https://www.twitch.tv/tenexcoder)
 
 ## Timeline
 
