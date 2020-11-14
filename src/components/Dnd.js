@@ -11,12 +11,12 @@ function Dnd() {
             header: "list one", 
             items: [
                 {
-                    id: 123, 
-                    content: "item one" 
+                    id: 1123, 
+                    content: "l1 item one" 
                 },
                 {
-                    id: 456, 
-                    content: "item two" 
+                    id: 11456, 
+                    content: "l1 item two" 
                 }
             ]
         },
@@ -25,24 +25,33 @@ function Dnd() {
             header: "list two", 
             items: [
                 {
-                    id: 123, 
-                    content: "item one" 
+                    id: 2123, 
+                    content: "l2 item one" 
                 },
                 {
-                    id: 456, 
-                    content: "item two" 
+                    id: 2456, 
+                    content: "l2 item two" 
                 }
             ]
         },
     ])
 
-    const handleState = useCallback((listIndex, upItems) => {
-        setLists(update(lists, {[listIndex]: {items: {$set: upItems}}}));
+    const handleState = useCallback((item, targetIndex) => {
+        const {id, content, index, sourceIndex} = item
+        // dont update when drag and drop is done from
+        // within the same list
+        if (sourceIndex !== targetIndex){
+            const updateList = update(lists, {
+                [sourceIndex]: {items: { $splice: [[index, 1]] }},
+                [targetIndex]: {items: {$push: [{id, content, index}]}}
+            })
+            setLists(updateList)
+        }
     }, [lists]);
     
 return(
     <DndProvider backend={HTML5Backend}>
-        {lists.map(({id, header, items}, idx) => <List key={id} index={idx} header={header} items={items} setLists={setLists} handleState={handleState} />)}
+        {lists.map(({id, header, items}, idx) => <List key={id} id={id} index={idx} header={header} items={items} handleState={handleState} />)}
     </DndProvider>
 )
 }
